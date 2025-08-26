@@ -66,8 +66,6 @@ class TTNPUAcceleratorManager(AcceleratorManager):
     def set_current_process_visible_accelerator_ids(
         visible_npu_devices: List[str],
     ) -> None:
-        print("!!!!!!!!!!!!!!!!!!!!!set_device!!!!!!!!!!!!!!!!!!")
-        print("!"*10,visible_npu_devices)
         os.environ[
             TTNPUAcceleratorManager.get_visible_accelerator_ids_env_var()
         ] = ",".join([str(i) for i in visible_npu_devices])
