@@ -7,7 +7,7 @@ from ray._private.accelerators.accelerator import AcceleratorManager
 
 logger = logging.getLogger(__name__)
 
-TENSTORRENT_VISIBLE_DEVICES_ENV_VAR = "TT_METAL_VISIBLE_DEVICES"
+TENSTORRENT_VISIBLE_DEVICES_ENV_VAR = "TT_VISIBLE_DEVICES"
 
 
 class TTNPUAcceleratorManager(AcceleratorManager):
